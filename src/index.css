@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+} /* FF 4-18 */
+input:focus::-moz-placeholder {
+  color: transparent;
+} /* FF 19+ */
+input:focus:-ms-input-placeholder {
+  color: transparent;
+} /* IE 10+ */
+
+.light {
+  background-color: #ffffff;
+  --color-text: #2b3442;
+  --blue: #0079ff;
+  --white: #ffffff;
+  --gray: #697c9a;
+  --blue-gray: #4b6a9b;
+  --dark-blue: #2b3442;
+  --white-light: #fefefe;
+  --light-grey: #f6f8ff;
+  --red: #f74646;
+}
+.dark {
+  background-color: #141d2f;
+  --color-text: white;
+  --blue: #0079ff;
+  --white: #ffffff;
+  --gray: #2b3442;
+  --blue-gray: #2b3442;
+  --dark-blue: #2b3442;
+  --white-light: #1e2a47;
+  --light-grey: #141d2f;
+  --red: #f74646;
+}
+.margin-bottom {
+  margin-bottom: 0 !important;
+}
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --blue: "#0079FF";
+    --white: "#141D2F";
+    --gray: "#697C9A";
+    /* --blue-gray: "#4B6A9B";
+    --dark-blue: "#2B3442";
+    --white-light: "#4B6A9B";
+    --light-grey: "#141D2F";
+    --red: "#F74646";
+  } */
